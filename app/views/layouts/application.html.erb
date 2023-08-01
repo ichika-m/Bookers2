@@ -36,7 +36,7 @@
              </li>
              <li>
                <i class="fas fa-sign-out-alt" aria-hidden="true"></i>
-               <%= link_to "Log out", destroy_user_session_path, method: :delete, class: 'nav-link text-light' %>
+               <%= link_to "logout", destroy_user_session_path, method: :delete, class: 'nav-link text-light' %>
              </li>
              <% else %>
 
@@ -50,11 +50,11 @@
              </li>
              <li>
                 <i class ="fas fa-user-plus" aria-hidden="true"></i>
-             <%= link_to "Sign up", new_user_registration_path, class: 'nav-link text-light' %>
+             <%= link_to "sign up", new_user_registration_path, class: 'nav-link text-light' %>
              </li>
              <li>
                 <i class="fas fa-sign-in-alt" aria-hidden="true"></i>
-             <%= link_to "Log in", new_user_session_path, class: 'nav-link text-light' %>
+             <%= link_to "login", new_user_session_path, class: 'nav-link text-light' %>
              </li>
              <% end %>
           </ul>
